@@ -1,7 +1,7 @@
 <?php
 include('header.php');
 $chronicles = array(
-			array("name" => "Conquistadores", "chapters" => 7, "scenes" => 79, "players" => 6, "sessions" => 5),
+			array("name" => "Conquistadores", "chapters" => 14, "scenes" => 79, "players" => 6, "sessions" => 5),
 			array("name" => "Noches de Constantinopla", "chapters" => 5, "scenes" => 25, "players" => 6, "sessions" => 1),
 	);
 $data = array("chapters" => 0, "scenes" => 0, "players" => 0, "sessions" => 0);
@@ -55,7 +55,7 @@ $data = array("chapters" => 0, "scenes" => 0, "players" => 0, "sessions" => 0);
 				  <th></th>
 				  <th><?php echo $data["chapters"]; ?></th>
 				  <th><?php echo $data["scenes"]; ?></th>
-				  <th><?php echo $data["players"]; ?></th>
+				  <th>6</th>
 				  <th><?php echo $data["sessions"]; ?></th>
 				  <th>Acciones</th>
 				</tr>
