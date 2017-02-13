@@ -226,15 +226,25 @@
                 margin: new go.Margin(0, 0, 0, 3)
               },
               new go.Binding("text", "embraced").makeTwoWay()),
+			  $(go.TextBlock, "Clan: ", textStyle(),
+              { row: 3, column: 0 }),
+            $(go.TextBlock, textStyle(),
+              {
+                row: 3, column: 1, columnSpan: 4,
+                editable: true, isMultiline: false,
+                minSize: new go.Size(10, 14),
+                margin: new go.Margin(0, 0, 0, 3)
+              },
+              new go.Binding("text", "clan").makeTwoWay()),
 			   $(go.TextBlock, textStyle(),
-              { row: 3, column: 0 },
+              { row: 4, column: 0 },
               new go.Binding("text", "key", function(v) {return "ID: " + v;})),
             $(go.TextBlock, textStyle(),
-              { name: "boss", row: 3, column: 3, }, // we include a name so we can access this TextBlock when deleting Nodes/Links
+              { name: "boss", row: 4, column: 3, }, // we include a name so we can access this TextBlock when deleting Nodes/Links
               new go.Binding("text", "parent", function(v) {return "Boss: " + v;})),
             $(go.TextBlock, textStyle(),  // the comments
               {
-                row: 3, column: 0, columnSpan: 5,
+                row: 4, column: 0, columnSpan: 5,
                 font: "italic 9pt sans-serif",
                 wrap: go.TextBlock.WrapFit,
                 editable: true,  // by default newlines are allowed
