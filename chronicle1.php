@@ -49,8 +49,8 @@ $id = $_GET["id"];
 				  <td><a href="chapter<?php echo $id."-".$i+1; ?>.php"><?php echo $chapters[$i]["name"]; ?></a></td>
 				  <td><?php echo sizeof($chapters[$i]["scenelist"]); $data["scenes"] += sizeof($chapters[$i]["scenelist"]); ?></td>
 				  <td><?php echo $chapters[$i]["players"]; ?></td>
-				  <td><?php echo $chapters[$i]["dates"]; ?></td>
 				  <td><?php echo $chapters[$i]["sessions"]; $data["sessions"] += $chapters[$i]["sessions"]; ?></td>
+				  <td><?php echo $chapters[$i]["dates"]; ?></td>
 				  <td>
 						<i class="fa fa-eye" aria-hidden="true"></i>
 						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
