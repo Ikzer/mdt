@@ -1,0 +1,154 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+@font-face {
+    font-family: Goudy;
+    src: url("assets/fonts/Goudy.ttf");
+}
+@font-face {
+    font-family: Delavan;
+    src: url("assets/fonts/Delavan.ttf");
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+html, body {
+    height: 100%;
+    width: 100%}
+h1, h2, h3, h4, strong {
+	font-family: Delavan;
+}
+body, button {
+	font-family: Goudy;
+}
+.footer {
+  /*position: absolute; */
+  bottom: 0;
+  width: 100%;
+  text-align:center;
+  font-size: small;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .navbar-nav .nav-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+}
+.navbar-right ul {
+	float: right;
+	right: 0;
+}
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+.special, .special .jumbotron {
+    height: 100%}
+.adventurers-league-logo {
+    background-image: url(assets/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 108px 55px;
+    width: 108px;
+    height: 55px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.jumbotron-art {
+    background-image: url(assets/mainbg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.jumbotron-art .btn {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.jumbotron-art .btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.jumbotron-art>p>a.fa-chevron-down {
+    color: white;
+    font-size: 50px;
+    padding-top: 5%}
+.jumbotron-art>p>a.fa-chevron-down:hover {
+    text-decoration: none;
+}
+.jumbotron {
+    padding: 30px 15px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+}
+.jumbotron h1, .jumbotron .h1 {
+    color: #ffffff;
+}
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+	color: #ffffff;
+}
+.jumbotron>hr {
+    border-top-color: #d5d5d5;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+    border-radius: 6px;
+}
+.jumbotron .container {
+    max-width: 100%}
+@media screen and (min-width: 768px) {
+    .jumbotron {
+    padding: 48px 0;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.jumbotron h1, .jumbotron .h1 {
+    font-size: 63px;
+}
+.card {
+	margin: 20px 0;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
